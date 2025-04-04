@@ -1,0 +1,136 @@
+/* Conteneur principal */
+.button {
+    display: flex;                   /* Utilisation de Flexbox pour un alignement flexible des éléments */
+    flex-direction: column;          /* Organiser les éléments en colonne (vertically stacked) */
+    align-items: center;             /* Centrer les éléments horizontalement */
+    text-align: center;              /* Centrer le texte à l'intérieur des éléments */
+    gap: 20px;                       /* Ajouter de l'espace (gap) entre chaque élément */
+    padding: 20px;                   /* Un peu de padding global autour du contenu */
+    margin: 0 auto;                  /* Centrer le conteneur principal horizontalement */
+    width: 100%;                     /* Le conteneur prend toute la largeur disponible */
+}
+
+/* Carte/bouton projet */
+.project-btn {
+    width: 110%;                      /* Largeur relative à 90% du parent */
+    padding: 5% 0;                   /* Padding vertical (haut et bas) */
+    font-size: 18px;                 /* Taille de la police */
+    font-weight: bold;               /* Texte en gras */
+    background-color: white;        /* Fond blanc pour les boutons */
+    color: rgb(0, 0, 0);             /* Couleur du texte noire */
+    border: 2px solid #e8e8e8;       /* Bordure subtile autour du bouton */
+    border-radius: 20px;             /* Coins arrondis pour le bouton */
+    cursor: pointer;                /* Curseur en forme de main pour indiquer la cliquabilité */
+    transition: all 0.3s ease;       /* Transition douce pour tous les changements de propriété */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Ombre légère autour du bouton */
+    outline: none;                  /* Retirer le contour par défaut au focus */
+    display: flex;                   /* Utiliser Flexbox pour organiser le contenu du bouton */
+    flex-direction: column;          /* Empiler les éléments à l'intérieur du bouton en colonne */
+    align-items: center;             /* Centrer les éléments à l'intérieur du bouton horizontalement */
+}
+
+/* Effet au survol des boutons */
+.project-btn:hover {
+    color: rgb(0, 0, 0);             /* La couleur du texte reste noire au survol */
+    transform: translateY(-5px);     /* Animation d'élévation du bouton */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Ombre plus marquée au survol */
+}
+
+/* Wrapper de chaque carte (bouton) */
+#btn {
+    width: 50%;                      /* Largeur de chaque bouton à 50% du conteneur */
+    padding: 2% 0;                   /* Padding vertical */
+}
+
+/* Titre dans le bouton */
+.title-b {
+    font-size: 130%;                  /* Taille de la police du titre */
+    margin-bottom: 12px;              /* Marge sous le titre */
+}
+
+/* Description du projet */
+.btn-desc {
+    color: grey;                     /* Couleur du texte gris pour la description */
+    font-size: 120%;                  /* Taille de la police de la description */
+    margin-bottom: 10px;              /* Marge sous la description */
+    max-width: 700px;                 /* Limiter la largeur du texte */
+    word-wrap: break-word;            /* Gérer les retours à la ligne dans les mots longs */
+    text-align: center;               /* Centrer le texte de la description */
+}
+
+/* Lien "Découvrir" */
+.decouvrir {
+    color: blue;                     /* Couleur bleue pour le lien */
+    font-size: 120%;                  /* Taille de la police du lien */
+    margin-top: 10px;                 /* Marge au-dessus du lien */
+    max-width: 700px;                 /* Limiter la largeur du texte du lien */
+    word-wrap: break-word;            /* Gérer les retours à la ligne dans les mots longs */
+    text-align: center;               /* Centrer le lien */
+}
+
+/* ✅ Responsive – pour les écrans INFÉRIEURS à 1764px */
+@media (max-width: 1764px) {
+    .button {
+        max-width: 1000px;            /* Limite la largeur du conteneur principal */
+        gap: 16px;                    /* Réduit l'espace entre les éléments */
+    }
+
+    .project-btn {
+        width: 80%;                   /* Réduit la largeur des boutons à 80% */
+        padding: 14px 0;              /* Augmente le padding vertical */
+        font-size: 17px;              /* Réduit la taille de la police */
+    }
+
+    #btn {
+        width: 90%;                   /* Adapte la largeur des boutons à 90% pour les petits écrans */
+        padding: 14px 0;              /* Augmente le padding vertical */
+    }
+
+    .title-b {
+        font-size: 115%;               /* Réduit la taille du titre */
+    }
+
+    .btn-desc, .decouvrir {
+        font-size: 105%;               /* Réduit la taille de la description et du lien */
+        max-width: 90%;                /* Réduit la largeur maximale du texte */
+    }
+}
+
+/* ✅ Responsive pour les écrans INFÉRIEURS à 998px */
+@media (max-width: 998px) {
+    .button {
+        width: 95%;                   /* Réduit la largeur du conteneur principal à 95% */
+        padding: 10px;                 /* Réduit le padding autour du contenu */
+        gap: 12px;                    /* Réduit l'espace entre les éléments */
+        margin: 0 10px;                /* Ajoute une petite marge horizontale */
+    }
+
+    /* Le texte reste toujours visible, les éléments sont bien séparés */
+    .project-btn {
+        width: 100%;                  /* Utilise toute la largeur disponible pour les petits écrans */
+        padding: 10px 0;              /* Ajuste le padding vertical */
+        font-size: 16px;              /* Réduit la taille du texte */
+    }
+
+    #btn {
+        width: 100%;                  /* Adapte la largeur des boutons à 100% */
+        padding: 10px 0;              /* Réduit le padding vertical */
+    }
+
+    .title-b {
+        font-size: 110%;              /* Réduit légèrement la taille du titre */
+    }
+
+    .btn-desc, .decouvrir {
+        font-size: 100%;              /* Réduit encore un peu la taille du texte */
+        max-width: 90%;               /* Limite la largeur du texte */
+        text-align: center;           /* Centrer le texte */
+    }
+
+    /* Assurez-vous que les boutons se placent bien sous le texte */
+    .project-btn {
+        display: flex;               /* Affichage Flexbox pour une meilleure organisation */
+        flex-direction: column;      /* Organiser les éléments du bouton en colonne */
+        align-items: center;         /* Centrer les éléments à l'intérieur du bouton */
+    }
+}

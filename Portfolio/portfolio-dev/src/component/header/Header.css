@@ -1,0 +1,110 @@
+/* Style général du header */
+.head {
+    display: flex;                    /* Utilisation de Flexbox pour l'organisation des éléments */
+    flex-direction: column;           /* Les éléments sont organisés en colonne */
+    align-items: center;              /* Centrer horizontalement les éléments */
+    justify-content: center;          /* Centrer verticalement les éléments */
+    min-height: 50vh;                 /* Hauteur minimale à 50% de la hauteur de la fenêtre */
+    text-align: center;               /* Centrer le texte à l'intérieur des éléments */
+    padding: 20px;                    /* Espacement interne autour des éléments */
+}
+
+/* Titre */
+#name {
+    font-size: 4rem;                  /* Taille de police large pour le titre */
+    margin-bottom: 20px;              /* Marge sous le titre pour espacer du contenu suivant */
+    margin-left: 90px;                /* Décale le titre vers la droite (ajouter cette marge peut déséquilibrer la mise en page) */
+}
+
+/* Bio */
+#bio {
+    font-size: 1.6rem;                /* Taille de police plus petite pour la bio */
+    color: grey;                      /* Couleur du texte en gris */
+    max-width: 800px;                 /* Largeur maximale de la bio pour éviter qu'elle s'étende trop */
+    margin-bottom: 7px;               /* Marge sous la bio pour espacer du contenu suivant */
+}
+
+/* Container des liens sociaux */
+.link-container {
+    display: flex;                    /* Utilisation de Flexbox pour l'alignement horizontal */
+    justify-content: center;          /* Centrer les éléments horizontalement */
+    align-items: center;              /* Centrer verticalement les icônes */
+    gap: 20px;                        /* Espacement entre les icônes */
+    margin-top: 10px;                 /* Marge réduite au-dessus des icônes */
+}
+
+/* Ajustement de la taille des icônes LinkedIn et GitHub */
+#l {
+    width: 80px;                      /* Largeur fixe pour l'icône LinkedIn */
+    height: 80px;                     /* Hauteur fixe pour l'icône LinkedIn */
+}
+
+#git {
+    width: 50px;                      /* Largeur fixe pour l'icône GitHub */
+    height: 50px;                     /* Hauteur fixe pour l'icône GitHub */
+}
+
+/* Effet au survol des icônes */
+.link-container img:hover {
+    transform: scale(1.1);            /* Légère mise à l'échelle des icônes au survol */
+}
+
+/* ✅ Pour les écrans plus petits, ajuster les marges et les paddings */
+@media (max-width: 1200px) {
+    #name {
+        font-size: 3rem;              /* Réduction de la taille du titre sur les écrans plus petits */
+    }
+
+    #bio {
+        font-size: 1.4rem;            /* Réduction de la taille de la bio sur les écrans plus petits */
+    }
+
+    .link-container {
+        gap: 15px;                    /* Réduction de l'espace entre les icônes */
+    }
+
+    .link-container img {
+        width: 50px;                  /* Réduction de la taille des icônes */
+        height: 50px;                 /* Réduction de la taille des icônes */
+    }
+}
+
+/* ✅ Pour les écrans très petits (moins de 768px) */
+@media (max-width: 768px) {
+    #name {
+        font-size: 2.5rem;            /* Réduction de la taille du titre pour s'adapter aux petits écrans */
+    }
+
+    #bio {
+        font-size: 1.2rem;            /* Réduction de la taille de la bio pour les petits écrans */
+    }
+
+    .link-container {
+        gap: 12px;                    /* Réduction de l'espace entre les icônes pour plus de place */
+    }
+
+    .link-container img {
+        width: 40px;                  /* Réduction de la taille des icônes pour les petits écrans */
+        height: 40px;                 /* Réduction de la taille des icônes */
+    }
+}
+
+/* ✅ Pour les écrans ultra petits (moins de 480px) */
+@media (max-width: 480px) {
+    #name {
+        font-size: 2rem;              /* Réduction encore plus importante de la taille du titre */
+    }
+
+    #bio {
+        font-size: 1rem;              /* Réduction encore plus importante de la taille de la bio */
+    }
+
+    .link-container {
+        gap: 10px;                    /* Réduction de l'espace entre les icônes */
+    }
+
+    .link-container img {
+        width: 35px;                  /* Réduction de la taille des icônes pour les très petits écrans */
+        height: 35px;                 /* Réduction de la taille des icônes */
+    }
+}
