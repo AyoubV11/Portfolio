@@ -22,7 +22,7 @@ function Gtosint() {
                     à partir de son pseudo.
                 </span>
                 <br /><br />
-                <a className="decouvrir" href="">Découvrir</a>  {/* Lien "Découvrir" pour en savoir plus */}
+                <a className="decouvrir" href="#">Découvrir</a>  {/* Lien "Découvrir" pour en savoir plus */}
             </div>
         </div>
     );
