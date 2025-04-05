@@ -38,7 +38,7 @@ function SlitherLink() {
                     SLITHER LINK est un projet logiciel développé en Java, intégrant un système d'aide à la résolution.
                 </span>
                 <br /><br />
-                <a className="decouvrir" href="">Découvrir</a>  {/* Lien "Découvrir" pour en savoir plus */}
+                <a className="decouvrir" href="https://www.linkedin.com/in/ayoub-laaribi-a3b1aa230/">Découvrir</a>  {/* Lien "Découvrir" pour en savoir plus */}
             </div>
         </div>
     );
