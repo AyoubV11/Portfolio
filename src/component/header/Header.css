@@ -13,7 +13,8 @@
 #name {
     font-size: 4rem;                  /* Taille de police large pour le titre */
     margin-bottom: 20px;              /* Marge sous le titre pour espacer du contenu suivant */
-    margin-left: 90px;                /* Décale le titre vers la droite (ajouter cette marge peut déséquilibrer la mise en page) */
+    margin-left: 5px;                /* Décale le titre vers la droite (ajouter cette marge peut déséquilibrer la mise en page) */
+    
 }
 
 /* Bio */
